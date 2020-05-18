@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:paddingTop="16dp"
+                android:text="Team A"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/team_a_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:padding="16dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="54sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:onClick="addOneForTeamA"
+                android:text="opponent out  + 1"
+                android:textColor="#ffff" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:onClick="addOneForTeamA"
+                android:text="Bonus Point   + 1"
+                android:textColor="#ffff" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:onClick="addTwoForTeamA"
+                android:text="super raid    + 2"
+                android:textColor="#ffff" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:onClick="addTwoForTeamA"
+                android:text="ALL OUT   + 2"
+                android:textColor="#ffff" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:paddingTop="16dp"
+                android:text="Team B"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/team_b_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:padding="16dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="54sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:onClick="addOneForTeamB"
+                android:text="Opponent Out  + 1"
+                android:textColor="#ffff" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:onClick="addOneForTeamB"
+                android:text="Bonus Point   + 1"
+                android:textColor="#ffff" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:onClick="addTwoForTeamB"
+                android:text="Super Raid    + 2"
+                android:textColor="#ffff" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:onClick="addTwoForTeamB"
+                android:text="All Out   + 2"
+                android:textColor="#ffff" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:onClick="resetScore"
+        android:text="RESET"
+        android:textColor="#ffff">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+</RelativeLayout>
